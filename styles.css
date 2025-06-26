@@ -4,3 +4,55 @@
     box-sizing: border-box; 
     font-family: "Raleway", sans-serif;
 }
+body {
+    display: flex;
+    justify-content: center;
+}
+#apartment-rentals {
+    display: flex;
+    border: 1px solid black;
+    width: 72%;
+    height: fit-content
+}
+
+#nav-bar {
+border: 1px solid green;
+width: 390px;
+}
+
+nav {
+    position: fixed;
+}
+
+#banner {
+    border: 1px solid red;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+}
+
+#apartment{
+    height: 85vh;
+}
+
+#the-space {
+    height: 30vh;
+}
+
+#amenities {
+    height: 34vh;
+}
+
+#extra-info {
+    height: 32vh;
+}
+
+#rules {
+    height:35.5vh
+}
+
+#contact {
+    height: 74vh;
+}
