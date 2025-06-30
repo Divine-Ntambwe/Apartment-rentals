@@ -20,10 +20,41 @@
     <title>Apartment Rentals</title>
   </head>
   <body>
+    <div id="subscribe-popup">
+      <div id="popup">
+        <h1>Subscribe</h1>
+        <p>Join our mailing list to receive updates on available dates and special offers.</p>
+      </div>
+    </div>
     <div id="apartment-rentals">
       <div id="nav-bar">
         <nav>
-            navbar
+            <div id="nav-heading"><span>Rental</span> from $99 <span id="nav-heading-small">per night</span></div>
+
+            <form>
+              
+                <label><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Check In</label>
+                <input type="text" placeholder="DD MM YYYY">
+
+                <label><i class="fa fa-calendar-o" aria-hidden="true"></i> Check Out</label>
+                <input type="text" placeholder="DD MM YYYY">
+
+                <label><i class="fa fa-male" aria-hidden="true"></i> Adults</label>
+                <input type="number" >
+
+                 <label><i class="fa fa-child" aria-hidden="true"></i> Kids</label>
+                <input type="number" >
+
+                <button id="nav-submit"><i class="fa fa-search" aria-hidden="true"></i> Search Availability</button>
+            </form>
+
+            <div id="links">
+             <p><a><i class="fa fa-building" aria-hidden="true"></i> Apartment</a></p>
+              <p><i class="fa fa-rss" aria-hidden="true"></i> Subscribe</p>
+              <p><a><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a></p>
+            </div>
+
+            
         </nav>
       </div>
 
