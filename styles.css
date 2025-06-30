@@ -82,11 +82,11 @@ align-items: center;
     justify-self: flex-start;
 }
 
-#links {
+#nav-links {
     margin-top: 20px;
 }
 
-#links p{
+#nav-links p{
     width: 100%;
     height: 60px;
     display: flex;
@@ -94,8 +94,18 @@ align-items: center;
     align-items: center;
 }
 
-#links p:hover {
+#nav-links p:hover {
     background-color: lightgray;
+    cursor: pointer;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-links i {
+    margin-right: 5px;
 }
 
 @keyframes popup {
@@ -104,10 +114,9 @@ align-items: center;
 }
 
 #subscribe-popup{
-    position: absolute;
+    position: fixed;
     align-self: center;
-    display: flex;
-    /* display: none; */
+    display: none;
     justify-content: center;
     top: 0;
     left: 0;
@@ -124,7 +133,7 @@ align-items: center;
     background-color: white;
     position:relative;
     top:100px;
-    animation: popup 1s 0.5s forwards;
+    animation: popup 1s forwards;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,8 +161,22 @@ display: inline;
     font-size: 26px;
     position: relative;
     left: 330px;
-    top:-10px
+    top:-10px;
+    padding: 10px 15px ;
 }
+
+#heading-x span:hover {
+ background-color: rgba(0,0,0, 0.2);
+ cursor: pointer;
+}
+
+#subscribe-popup-button:hover {
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+
 
 #banner {
     border: 1px solid red;
