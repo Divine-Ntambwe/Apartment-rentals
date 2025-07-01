@@ -184,6 +184,8 @@ display: inline;
 
 .section {
     width: 100%;
+    margin-left: 25px;
+
 }
 
 #apartment{
@@ -200,14 +202,14 @@ display: inline;
 }
 
 #livingroom{
-    width: 100%;
-    margin-top: 12px;
+    width: 95%;
+    margin-top: 30px;
 }
 
 .lroom{
  background-color: black;
- width: 115px;
- height: 55px;
+ width: 145px;
+ height: 64px;
  text-align: center;
  color: #ffffff;
  padding-top: 17px;
@@ -222,13 +224,13 @@ display: inline;
 }
 
 #room{
- width: 155px;
- height: 90px;
+ width: 180px;
+ height: 100px;
 }
 
 #rooms{
- width: 175px;
- height: 90px;
+ width: 200px;
+ height: 100px;
  padding-left: 15px;
 }
 
