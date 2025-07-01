@@ -17,7 +17,7 @@ body {
 
 #nav-bar {
 border: 1px solid green;
-width: 390px;
+width: 380px;
 }
 
 nav {
@@ -34,11 +34,57 @@ nav {
 }
 
 #apartment{
-    height: 85vh;
+    height: 103vh;
+    border: 1px solid blue;
 }
 
+.mainHeading{
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 30px;
+    color: #4CAF50;
+    padding-top: 12px;
+}
+
+#livingroom{
+    width: 100%;
+    margin-top: 12px;
+}
+
+.lroom{
+ background-color: black;
+ width: 115px;
+ height: 55px;
+ text-align: center;
+ color: #ffffff;
+ padding-top: 17px;
+ position: absolute;
+ margin-top: -65px;
+}
+
+.smallImg{
+ display: flex;
+ margin-top: 5px;
+
+}
+
+#room{
+ width: 155px;
+ height: 90px;
+}
+
+#rooms{
+ width: 175px;
+ height: 90px;
+ padding-left: 15px;
+}
+
+#rooms :hover{
+filter: blur(2px);
+}
 #the-space {
     height: 30vh;
+
 }
 
 #amenities {
@@ -49,6 +95,28 @@ nav {
     height: 32vh;
 }
 
+strong{
+ font-size: 20px;
+ font-family: Raleway;
+ font-weight: 600;
+}
+
+p{
+    font-size: 15px;
+    line-height: 23px;
+    margin-top: 15px;
+}
+.cards{
+  width: 150px;
+  margin-left: 80px;
+  margin-top: -20px;
+  font-size: 17px;
+}
+
+hr{
+    margin: 20px 0px;
+    color: lightgray;
+}
 #rules {
     height:35.5vh
 }
