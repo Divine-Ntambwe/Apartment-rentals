@@ -6,7 +6,9 @@
 }
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+     overflow-x:hidden;
 }
 #apartment-rentals {
     display: grid;
@@ -23,7 +25,6 @@ nav {
     height: 100%;
     width: calc(0.26*1100px);
     background-color: #f1f1f1;
-    /* display: none; */
     overflow: auto;
 }
 
@@ -57,7 +58,7 @@ label {
     display: block;
 }
 
-nav input,#nav-submit {
+nav input,#nav-submit,#popup input {
     width: 100%;
     height: 40px;
     font-size: 18px;
@@ -181,7 +182,55 @@ button:hover {
     cursor: pointer;
 }
 
+#hor-navbar{
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 15px ;
+    position:sticky;
+    top:0;
+}
 
+#hor-navbar h1 {
+    display: inline;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+#hor-navbar span{
+    font-size: 30px;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hor-navbar span:hover {
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+   
+}
+
+#close-navbar{
+    font-size: 18px;
+    text-align: right;
+    display: block;
+    display: none;
+}
+#close-navbar i {
+    padding: 10px;
+}
+#close-navbar i:hover {
+    background-color: rgba(0,0,0, 0.2);
+    cursor: pointer;
+}
 
 #banner {
     border: 1px solid red;
@@ -282,7 +331,7 @@ hr{
 }
 
 #contact {
-    height: 75vh;
+    height: 600px;
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -339,9 +388,35 @@ color: #4CAF50;
 @media screen and (max-width: 1200px) {
     #nav-bar {
         display: none;
+        position: absolute;
+        top: 0;
+    }
+
+    #nav-heading {
+        margin: 0;
     }
 
     #apartment-rentals{
         display: block;
+        width: 100vw;
+       
     }
+    #close-navbar {
+        display: block;
+    }
+
+    #hor-navbar {
+        display: flex;
+    }
+
+    #popup {
+        width: 700px;
+    }
+
+    #heading-x span {
+    left: 130px;
+    top:-10px;
+}
+
+  
 }
