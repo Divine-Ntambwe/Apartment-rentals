@@ -47,7 +47,7 @@ nav {
 
 
 
-form {
+nav form {
     margin: 45px 0;
     padding: 0 15px;
 }
@@ -57,13 +57,16 @@ label {
     display: block;
 }
 
-input,#nav-submit {
+nav input,#nav-submit {
     width: 100%;
     height: 40px;
     font-size: 18px;
     padding-left: 5px;
     margin: 20px 0;
+   
 }
+
+
 
 button {
 color: white;
@@ -172,7 +175,7 @@ display: inline;
  cursor: pointer;
 }
 
-#subscribe-popup-button:hover {
+button:hover {
     color: black;
     background-color: lightgray;
     cursor: pointer;
@@ -257,7 +260,7 @@ strong{
  font-weight: 600;
 }
 
-p{
+#extra-info p{
     font-size: 15px;
     line-height: 23px;
     margin-top: 15px;
@@ -272,13 +275,65 @@ p{
 hr{
     margin: 20px 0px;
     color: lightgray;
+    opacity: 30%;
 }
 #rules {
     height:35.5vh
 }
 
 #contact {
-    height: 74vh;
+    height: 75vh;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-heading {
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+#contact-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-info i {
+margin-right: 20px;
+}
+
+#contact-form-subheading {
+    margin-top: 15px;
+}
+
+#contact input {
+margin-bottom: 15px;
+display: block;
+width: 100%;
+height: 45px;
+font-size: 16px;
+padding: 8px;
+}
+
+#contact button {
+ height: 45px;
+ width: 30%;
+ font-size: 16px;
+}
+
+#w3schools-link {
+    margin-top: 40px;
+}
+
+#w3schools-link a{
+    color: inherit;
+}
+
+#w3schools-link a:hover {
+color: #4CAF50;
 }
 
 @media screen and (max-width: 1200px) {
