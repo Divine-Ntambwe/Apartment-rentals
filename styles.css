@@ -12,14 +12,14 @@ body {
     display: grid;
     grid-template-columns: 26% 74%;
     border: 1px solid black;
-    width: 72%;
+    width: 1200px;
     height: fit-content;
 }
 
 nav {
     position: fixed;
     height: 100%;
-    width: 283px;
+    width: calc(0.26*1200px);
     background-color: #f1f1f1;
    
     overflow: auto;
