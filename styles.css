@@ -10,18 +10,19 @@ body {
 }
 #apartment-rentals {
     display: grid;
+    width: 1100px;
+    height: fit-content;
     grid-template-columns: 26% 74%;
     border: 1px solid black;
-    width: 72%;
-    height: fit-content;
+ 
 }
 
 nav {
     position: fixed;
     height: 100%;
-    width: 283px;
+    width: calc(0.26 * 1100px);
     background-color: #f1f1f1;
-   
+    /* display: none; */
     overflow: auto;
 }
 
@@ -180,14 +181,17 @@ display: inline;
 
 #banner {
     border: 1px solid red;
+    overflow: hidden;
 }
 
 .section {
-    width: 100%;
+    width: 100%x;
 }
 
 #apartment{
     height: 85vh;
+    border: 1px solid pink;
+
 }
 
 #the-space {
@@ -208,4 +212,14 @@ display: inline;
 
 #contact {
     height: 74vh;
+}
+
+@media screen and (max-width: 1200px) {
+    #nav-bar {
+        display: none;
+    }
+
+    #apartment-rentals{
+        display: block;
+    }
 }
