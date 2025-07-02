@@ -330,7 +330,7 @@ strong{
  margin-top: 20px;
 }
 
-#extra-info p{
+#extra-info p, #rules p{
     font-size: 15px;
     line-height: 23px;
     margin-top: 15px;
