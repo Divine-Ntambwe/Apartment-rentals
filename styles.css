@@ -15,7 +15,6 @@ body {
     width: 1100px;
     height: fit-content;
     grid-template-columns: 26% 74%;
-    border: 1px solid black;
 }
 
 nav {
@@ -192,6 +191,7 @@ button:hover {
     padding: 0 0 0 15px ;
     position:sticky;
     top:0;
+    z-index: 10;
 }
 
 #hor-navbar h1 {
@@ -231,7 +231,6 @@ button:hover {
 }
 
 #banner {
-    border: 1px solid red;
     overflow: hidden;
 }
 
@@ -296,7 +295,7 @@ button:hover {
 }
 
 #the-space {
-    height: 32vh;
+    height: 200px;
 
 
 }
@@ -315,12 +314,12 @@ button:hover {
 }
 
 #amenities {
-    height: 34vh;
+    height: 210px;
     margin-top: 40px;
 }
 
 #extra-info {
-    height: 35vh;
+    height: 220px;
 }
 
 strong{
@@ -353,15 +352,15 @@ hr{
     opacity: 30%;
 }
 #rules {
-    height:40vh
+    height:270px;
 }
 
 #subscribe{
   width: 255px;
   height: 40px;
-  background-color: #4CAF50;
   margin-top: 20px;
   font-size: 18px;
+  border: none;
 }
 
 #contact {
@@ -450,7 +449,10 @@ color: #4CAF50;
     #heading-x span {
     left: 130px;
     top:-10px;
+    }
+    #the-space {
+        margin-top: 230px;
+    }
 }
 
   
-}
