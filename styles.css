@@ -12,14 +12,14 @@ body {
     display: grid;
     grid-template-columns: 26% 74%;
     border: 1px solid black;
-    width: 1200px;
+    width: 1100px;
     height: fit-content;
 }
 
 nav {
     position: fixed;
     height: 100%;
-    width: calc(0.26*1200px);
+    width: calc(0.26*1100px);
     background-color: #f1f1f1;
    
     overflow: auto;
@@ -177,11 +177,6 @@ display: inline;
 }
 
 
-
-#banner {
-    border: 1px solid red;
-}
-
 .section {
     width: 100%;
     margin-left: 25px;
@@ -189,8 +184,7 @@ display: inline;
 }
 
 #apartment{
-    height: 103vh;
-    border: 1px solid blue;
+    height: 105vh;
 }
 
 .mainHeading{
@@ -198,28 +192,35 @@ display: inline;
     font-weight: 400;
     font-size: 30px;
     color: #4CAF50;
-    padding-top: 12px;
+    padding-top: 8px;
 }
+
+
 
 #livingroom{
     width: 95%;
-    margin-top: 30px;
+    margin-top: 11px;
 }
 
 .lroom{
  background-color: black;
- width: 145px;
- height: 64px;
+ width: 132px;
+ height: 60px;
  text-align: center;
  color: #ffffff;
- padding-top: 17px;
+ padding-top: 5px;
  position: absolute;
- margin-top: -65px;
+ margin-top: -90px;
 }
 
 .smallImg{
  display: flex;
- margin-top: 5px;
+ 
+}
+
+.rooms:hover{
+ opacity: 100%;
+ cursor: pointer
 
 }
 
@@ -228,44 +229,64 @@ display: inline;
  height: 100px;
 }
 
-#rooms{
+.rooms{
  width: 200px;
  height: 100px;
  padding-left: 15px;
+ opacity: 60%;
+ transition: filter 0.3s ease;
 }
 
-#rooms :hover{
-filter: blur(2px);
-}
 #the-space {
-    height: 30vh;
+    height: 32vh;
+
+
+}
+
+.section{
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 400;
+
+}
+
+.side-icons{
+   margin-left: 385px;
+   margin-top: -150px;
 
 }
 
 #amenities {
     height: 34vh;
+    margin-top: 40px;
 }
 
 #extra-info {
-    height: 32vh;
+    height: 35vh;
 }
 
 strong{
  font-size: 20px;
  font-family: Raleway;
  font-weight: 600;
+ margin-top: 20px;
 }
 
 p{
-    font-size: 15px;
-    line-height: 23px;
+    font-size: 17px;
+    line-height: 25px;
     margin-top: 15px;
 }
+
+.weAccept{
+    display: flex;
+    margin-top: -50px;
+}
+
 .cards{
   width: 150px;
-  margin-left: 80px;
-  margin-top: -20px;
-  font-size: 17px;
+  font-size: 20px;
+  margin-left: 5px;
 }
 
 hr{
@@ -273,7 +294,15 @@ hr{
     color: lightgray;
 }
 #rules {
-    height:35.5vh
+    height:40vh
+}
+
+#subscribe{
+  width: 255px;
+  height: 40px;
+  background-color: #4CAF50;
+  margin-top: 20px;
+  font-size: 18px;
 }
 
 #contact {
