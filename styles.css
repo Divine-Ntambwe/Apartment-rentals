@@ -6,7 +6,9 @@
 }
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+     overflow-x:hidden;
 }
 #apartment-rentals {
     display: grid;
@@ -44,7 +46,7 @@ nav {
 
 
 
-form {
+nav form {
     margin: 45px 0;
     padding: 0 15px;
 }
@@ -54,13 +56,16 @@ label {
     display: block;
 }
 
-input,#nav-submit {
+nav input,#nav-submit,#popup input {
     width: 100%;
     height: 40px;
     font-size: 18px;
     padding-left: 5px;
     margin: 20px 0;
+   
 }
+
+
 
 button {
 color: white;
@@ -169,13 +174,61 @@ display: inline;
  cursor: pointer;
 }
 
-#subscribe-popup-button:hover {
+button:hover {
     color: black;
     background-color: lightgray;
     cursor: pointer;
 }
 
+#hor-navbar{
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    color: white;
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 15px ;
+    position:sticky;
+    top:0;
+}
 
+#hor-navbar h1 {
+    display: inline;
+    font-weight: normal;
+    font-size: 27px;
+}
+
+#hor-navbar span{
+    font-size: 30px;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hor-navbar span:hover {
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+   
+}
+
+#close-navbar{
+    font-size: 18px;
+    text-align: right;
+    display: block;
+    display: none;
+}
+#close-navbar i {
+    padding: 10px;
+}
+#close-navbar i:hover {
+    background-color: rgba(0,0,0, 0.2);
+    cursor: pointer;
+}
 
 #banner {
     border: 1px solid red;
@@ -254,7 +307,7 @@ strong{
  font-weight: 600;
 }
 
-p{
+#extra-info p{
     font-size: 15px;
     line-height: 23px;
     margin-top: 15px;
@@ -269,21 +322,99 @@ p{
 hr{
     margin: 20px 0px;
     color: lightgray;
+    opacity: 30%;
 }
 #rules {
     height:35.5vh
 }
 
 #contact {
-    height: 74vh;
+    height: 600px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-heading {
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+#contact-info {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-info i {
+margin-right: 20px;
+}
+
+#contact-form-subheading {
+    margin-top: 15px;
+}
+
+#contact input {
+margin-bottom: 15px;
+display: block;
+width: 100%;
+height: 45px;
+font-size: 16px;
+padding: 8px;
+}
+
+#contact button {
+ height: 45px;
+ width: 30%;
+ font-size: 16px;
+}
+
+#w3schools-link {
+    margin-top: 40px;
+}
+
+#w3schools-link a{
+    color: inherit;
+}
+
+#w3schools-link a:hover {
+color: #4CAF50;
 }
 
 @media screen and (max-width: 1200px) {
     #nav-bar {
         display: none;
+        position: absolute;
+        top: 0;
+    }
+
+    #nav-heading {
+        margin: 0;
     }
 
     #apartment-rentals{
         display: block;
+        width: 100vw;
+       
     }
+    #close-navbar {
+        display: block;
+    }
+
+    #hor-navbar {
+        display: flex;
+    }
+
+    #popup {
+        width: 700px;
+    }
+
+    #heading-x span {
+    left: 130px;
+    top:-10px;
+}
+
+  
 }
